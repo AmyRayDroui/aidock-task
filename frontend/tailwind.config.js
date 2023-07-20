@@ -1,0 +1,76 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+
+  theme: {
+    colors: {
+      transparent: "rgba(0, 0, 0, 0)",
+      primary: "#2F71E5",
+      popupBg: "rgba(0, 0, 0, 0.5)",
+      dark: "#1A1B22",
+      gray: "#d3d3d3",
+      light: "#FFFFFF",
+    },
+    fontFamily: {
+      fancy: ["Secular One", "sans-serif"],
+      sans: ["Heebo", "sans-serif"],
+      serif: ["Heebo", "sans-serif"],
+      poppins: ["Heebo", "sans-serif"],
+      display: ["Heebo", "sans-serif"],
+      body: ["Heebo", "sans-serif"],
+    },
+    extend: {
+      variants: {
+        fill: ["hover", "focus"],
+      },
+      gridTemplateColumns: {
+        "auto-1fr": "auto 1fr",
+        "1fr-auto": "1fr auto",
+        "auto-auto": "auto auto",
+        "auto-auto-1fr": "auto auto 1fr",
+        "auto-auto-auto-1fr": "auto auto auto 1fr",
+        "auto-1fr-1fr": "auto 1fr 1fr",
+        "1fr-2fr": "1fr 2fr;",
+        "1fr-3fr": "1fr 3fr;",
+        "2fr-1fr": "2fr 1fr;",
+        "2fr-3fr": "2fr 3fr;",
+        "auto-2fr-1fr": "auto 2fr 1fr",
+        worlds: "1fr 1.4fr 1fr",
+        "auto-1fr-auto": "auto 1fr auto",
+        "8-auto": "auto auto auto auto auto auto auto 1fr",
+        "7-auto": "auto auto auto auto auto auto 1fr",
+        "6-auto": "auto auto auto auto auto 1fr",
+        "5-auto": "auto auto auto auto 1fr",
+        "4-auto": "auto auto auto 1fr",
+      },
+      gridTemplateRows: {
+        "auto-1fr": "auto 1fr",
+        "1fr-auto": "1fr auto",
+        "1fr-9fr-1fr": "1fr 9fr 1fr",
+        "1fr-1fr": "1fr 1fr",
+        "1fr-2fr": "1fr 2fr",
+        "2fr-1fr": "2fr 1fr",
+        "1fr-8fr": "1fr 8fr",
+        "auto-1fr-auto": "auto 1fr auto",
+        "auto-auto-1fr": "auto auto 1fr",
+        "1fr-1fr-auto": "1fr 1fr auto",
+        "1fr-6fr-1fr": "1fr 6fr 1fr",
+        "1fr-auto-auto": "1fr auto auto",
+        "2-auto": "repeat(2, auto)",
+        "3-auto": "repeat(3, auto)",
+        "4-auto": "repeat(4, auto)",
+      },
+      gridAutoRows: {
+        "1fr": "1fr",
+      },
+      borderRadius: {
+        "homepage-bg": "40px 0px",
+      },
+      screens: {
+        short: { raw: "(max-height: 920px)" },
+        mdHeight: { raw: "(max-height: 1200px)" },
+      },
+    },
+  },
+  plugins: [],
+};
